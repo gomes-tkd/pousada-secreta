@@ -1,0 +1,149 @@
+.sobre {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.sobre h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.sobre p::first-letter {
+  text-transform: capitalize;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  max-width: 70rem;
+  gap: 100px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.info-card {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  margin-bottom: 15px;
+  max-width: 500px;
+}
+
+.info-card img {
+  width: 120px;
+  height: 120px;
+}
+
+.info-sobre {
+  display: grid;
+  gap: 20px;
+}
+
+.info-sobre h3::first-letter {
+  text-transform: capitalize;
+}
+
+@media (max-width: 1150px) {
+  .info-container {
+    grid-template-columns: 1fr;
+    max-width: 30rem;
+  }
+
+  .sobre h2 {
+    font-size: 32px;
+  }
+
+  .sobre p {
+    font-size: 26px;
+  }
+
+  .info-card {
+    max-width: 750px;
+    gap: 10px;
+  }
+
+  .info-card h3 {
+    font-size: 24px;
+  }
+
+  .info-card p {
+    font-size: 20px;
+  }
+
+  .info-card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .info-container-responsivel {
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+    max-width: 30rem;
+    margin: 0 auto;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    gap: 20px;
+  }
+
+  .info-card {
+    max-width: 500px;
+    gap: 10px;
+  }
+
+  .info-card p {
+    font-size: 16px;
+  }
+
+  .info-card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 560px) {
+  .info-sobre {
+    gap: 10px;
+  }
+
+  .info-card {
+    max-width: 400px;
+    display: grid;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .info-card img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .sobre {
+    gap: 10px;
+  }
+
+  .sobre h2 {
+    font-size: 26px;
+  }
+
+  .sobre p {
+    font-size: 18px;
+  }
+
+  .info-card img {
+    height: 80%;
+    width: 100%;
+  }
+}

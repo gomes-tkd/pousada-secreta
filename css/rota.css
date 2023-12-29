@@ -1,0 +1,42 @@
+.rota {
+  text-align: center;
+}
+
+.rota h2 {
+  font-size: 32px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.rota p {
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1150px) {
+  .rota h2 {
+    font-size: 32px;
+  }
+
+  .rota p {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 560px) {
+  .rota h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .rota p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .rota {
+    margin-top: 15px;
+  }
+}
